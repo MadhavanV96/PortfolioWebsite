@@ -1,0 +1,102 @@
+.services__container{
+    /* grid-template-columns: repeat(3,1fr); */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 1.875rem;
+    align-items: stretch;
+    
+}
+
+.services__card{
+    text-align: center;
+    width: 320px;
+    padding: 1.875rem;
+    border-radius: var(--border-radius);
+    background-color: var(--container-color);
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 2rem;
+}
+
+
+.services__card:hover{
+    transform: translateY(-10px);
+}
+
+.services__card:nth-child(1){
+    background-color: rgb(108,108,229);
+    box-shadow:0px 5px 20px 0px rgb(108,108,229/50%) ;
+}
+.services__card:nth-child(4){
+    background-color: rgb(225, 108, 229);
+    box-shadow:0px 5px 20px 0px rgb(108,108,229/50%) ;
+}
+
+
+
+
+.services__card:nth-child(2){
+    background-color: rgb(249,215,76);
+    box-shadow:0px 5px 20px 0px rgb(249,215,76/50%) ;
+
+}
+.services__card:nth-child(5){
+    background-color: rgb(76, 154, 249);
+    box-shadow:0px 5px 20px 0px rgb(249,215,76/50%) ;
+
+}
+
+
+
+.services__card:nth-child(3){
+    background-color: rgb(249,123,139);
+    box-shadow:0px 5px 20px 0px rgb(249,123,139/50%) ;
+
+}
+
+
+.services__img{
+    margin-bottom: 1.25rem;
+    max-height: 100px;
+}
+
+.services__title{
+    font-size: var(--h3-font-size);
+    margin-bottom: 1rem;
+    color:#fff
+}
+
+.services__description{
+color: #f8f9fa;
+}
+
+.services__card:nth-child(2) .services__title{
+    color:var(--title-color);
+}
+
+.services__card:nth-child(3) .services__description{
+    color:var(--text-color);
+}
+
+.services__technology{
+    max-width: 80px;
+    max-height: 80px;
+    padding: 0.5rem;
+}
+
+.services_subtechniques{
+    background-color: white;
+    border-radius: var(--border-radius);
+    height: 160px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-2{
+    grid-column: 2 / span 2; /* Centers the two items in the second row */
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
