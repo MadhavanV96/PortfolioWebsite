@@ -1,33 +1,30 @@
 import React from 'react';
 import "./services.css";
-import Image1 from "../../assets/service-1.svg";
-import Image2 from "../../assets/service-2.svg";
-import Image3 from "../../assets/service-3.svg";
 
-const data = [
-  {
-    id: 1,
-    image: Image1,
-    title: "UI/UX design",
-    description:
-      "Lorem ipsum dolor sit amet consectetuer adipiscing elit         aenean commodo ligula eget.",
-  },
-  {
-    id: 2,
-    image: Image2,
-    title: "Web Development",
-    description:
-      "Lorem ipsum dolor sit amet consectetuer adipiscing elit         aenean commodo ligula eget.",
-  },
-  {
-    id: 3,
-    image: Image3,
-    title: "Photography",
-    description:
-      "Lorem ipsum dolor sit amet consectetuer adipiscing elit         aenean commodo ligula eget.",
-  },
-];
 
+import html from "../../assets/HTML5_logo_and_wordmark.svg";
+import frontend from "../../assets/FrontendLogo.png";
+import css from "../../assets/CSS3_logo_and_wordmark.svg";
+import tailwind from "../../assets/Tailwind_CSS_Logo.svg";
+import js from "../../assets/Unofficial_JavaScript_logo_2.svg";
+import reactapp from "../../assets/React-icon.svg";
+import Backend from "../../assets/BackendLogo.png";
+import NodeJS from "../../assets/Node.js_logo.svg";
+import ExpressJS from "../../assets/icons8-express-js-50.png";
+import MongoDB from "../../assets/MongoDB_Logo.svg";
+import Python from "../../assets/Python-logo-notext.svg";
+import MySQL from "../../assets/MySql.png";
+import Graphics from "../../assets/3-2-graphic-design-free-download-png.png";
+import Figma from "../../assets/Figma-logo.svg";
+import PShop from "../../assets/Adobe_Photoshop_CC_icon.svg";
+import AIllus from "../../assets/Adobe_Illustrator_CC_icon.svg";
+import CodeSupport from "../../assets/CodingSupport.png";
+import VScode from "../../assets/Visual_Studio_Code_1.35_icon.svg";
+import GitHub from "../../assets/github Black.svg";
+import Eclipse from "../../assets/Eclipse-Luna-Logo.svg";
+import OtherTools from "../../assets/OtherTools.png";
+import MSOffice from "../../assets/Microsoft_Office_Logo_(2019-present).svg";
+import Filmora from "../../assets/1682566315logo-filmora.png";
 
 
 const Services = () => {
@@ -39,57 +36,57 @@ const Services = () => {
     <div className="services__container">
       {/* Front End */}
       <div className="services__card">
-        <img src="src\assets\FrontendLogo.png" alt="" className="services__img" />
+        <img src={frontend} alt="" className="services__img" />
         <h3 className="services__title">Front End Development</h3>
         <div className='services_subtechniques'>
-          <img src="src\assets\HTML5_logo_and_wordmark.svg" alt="" className='services__technology' />
-          <img src="src\assets\CSS3_logo_and_wordmark.svg" alt="" className='services__technology' />
-          <img src="src\assets\Tailwind_CSS_Logo.svg" alt="" className='services__technology' />
-          <img src="src\assets\Unofficial_JavaScript_logo_2.svg" alt="" className='services__technology' />
-          <img src="src\assets\React-icon.svg" alt="" className='services__technology' />
+          <img src={html} alt="" className='services__technology' />
+          <img src={css} alt="" className='services__technology' />
+          <img src={tailwind} alt="" className='services__technology' />
+          <img src={js} alt="" className='services__technology' />
+          <img src={reactapp} alt="" className='services__technology' />
         </div>
       </div>
       {/* Back End */}
       <div className="services__card">
-      <img src="src\assets\BackendLogo.png" alt="" className="services__img" />
+      <img src={Backend} alt="" className="services__img" />
         <h3 className="services__title">Back End Development</h3>
         <div className='services_subtechniques'>
-          <img src="src\assets\Node.js_logo.svg" alt="" className='services__technology' />
-          <img src="src\assets\icons8-express-js-50.png" alt="" className='services__technology' />
-          <img src="src\assets\MongoDB_Logo.svg" alt="" className='services__technology' />
-          <img src="src\assets\Python-logo-notext.svg" alt="" className='services__technology' />
-          <img src="src\assets\MySql.png" alt="" className='services__technology' />
+          <img src={NodeJS} alt="" className='services__technology' />
+          <img src={ExpressJS} alt="" className='services__technology' />
+          <img src={MongoDB} alt="" className='services__technology' />
+          <img src={Python} alt="" className='services__technology' />
+          <img src={MySQL} alt="" className='services__technology' />
         </div>
       </div>
       {/* DesignTools */}
       <div className="services__card">
-      <img src="src\assets\3-2-graphic-design-free-download-png.png" alt="" className="services__img" />
+      <img src={Graphics} alt="" className="services__img" />
         <h3 className="services__title">Design Tools</h3>
         <div className='services_subtechniques'>
-          <img src="src\assets\Figma-logo.svg" alt="" className='services__technology' />
-          <img src="src\assets\Adobe_Photoshop_CC_icon.svg" alt="" className='services__technology' />
-          <img src="src\assets\Adobe_Illustrator_CC_icon.svg" alt="" className='services__technology' />
+          <img src={Figma} alt="" className='services__technology' />
+          <img src={PShop} alt="" className='services__technology' />
+          <img src={AIllus} alt="" className='services__technology' />
         </div>
       </div>
       <>
       </>
       {/* Coding Support */}
       <div className="services__card ">
-      <img src="src\assets\CodingSupport.png" alt="" className="services__img" />
+      <img src={CodeSupport} alt="" className="services__img" />
         <h3 className="services__title">Coding Support</h3>
         <div className='services_subtechniques'>
-          <img src="src\assets\Visual_Studio_Code_1.35_icon.svg" alt="" className='services__technology' />
-          <img src="src\assets\github Black.svg" alt="" className='services__technology' />
-          <img src="src\assets\Eclipse-Luna-Logo.svg" alt="" className='services__technology' />
+          <img src={VScode} alt="" className='services__technology' />
+          <img src={GitHub} alt="" className='services__technology' />
+          <img src={Eclipse} alt="" className='services__technology' />
         </div>
       </div>
       {/* Other Tools */}
       <div className="services__card ">
-      <img src="src\assets\OtherTools.png" alt="" className="services__img" />
+      <img src={OtherTools} alt="" className="services__img" />
         <h3 className="services__title">Other Tools</h3>
         <div className='services_subtechniques'>
-          <img src="src\assets\Microsoft_Office_Logo_(2019-present).svg" alt="" className='services__technology' />
-          <img src="src\assets\1682566315logo-filmora.png" alt="" className='services__technology' />
+          <img src={MSOffice} alt="" className='services__technology' />
+          <img src={Filmora} alt="" className='services__technology' />
         </div>
 
       </div>
