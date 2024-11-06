@@ -11,18 +11,21 @@ const Menu = [
       image: Work1,
       title: "Movie Search APP Using React JS",
       category: "ReactJS",
+      projectLink:"https://moviesearchappreactmadhavan.netlify.app/"
     },
     {
       id: 2,
       image: Work2,
       title: "ECommerce Landing Page Using React",
       category: "React JS",
+      projectLink:"https://reactroutertaskmadhavan.netlify.app/"
     },
     {
       id: 3,
       image: Work3,
       title: "Card Flipping Game",
       category: "HTML, CSS & JS",
+      projectLink:"https://madhavan-card-flipping-game.netlify.app/"
     },
     ,
     {
@@ -30,6 +33,7 @@ const Menu = [
       image: Work4,
       title: "Portfolio Website",
       category: "ReactJS",
+      projectLink:"https://madhavanportfolio.netlify.app/"
     },
     ,
     {
@@ -37,6 +41,7 @@ const Menu = [
       image: Work5,
       title: "Travel Guide Website Landing Page",
       category: "HTML & CSS",
+      projectLink:"https://landingpagehtmlcssconversionmaddy.netlify.app//"
     },
     ,
     {
@@ -44,6 +49,7 @@ const Menu = [
       image: Work6,
       title: "EdTech Landing Page using Tailwind",
       category: "HTML & Tailwind CSS",
+      projectLink:"https://tailwindreactmaddy.netlify.app/"
     },
   ];
   
