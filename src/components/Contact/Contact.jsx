@@ -1,18 +1,19 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import "./contact.css"
-// require('dotenv').config();
+
 
 const Contact = () => {
   const form = useRef();
   const [submit, setSubmit] = useState("Send Message");
-  const[email,setEmail]=useState("sendEmail")
+  const[email,setEmail]=useState("sendEmail");
+ 
+  
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(process.env.REACT_APP_service_id, process.env.REACT_APP_template_id, form.current, {
-        publicKey: process.env.REACT_APP_publicKey,
+    emailjs.sendForm('service_nkyq5vi','template_mq79bfi', form.current, {
+        publicKey:"sYeJtIqydhDvhnZpn",
       })
       .then(
         () => {
@@ -64,4 +65,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default Contact;
