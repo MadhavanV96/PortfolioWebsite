@@ -1,7 +1,34 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
 import "./contact.css"
+require('dotenv').config();
 
 const Contact = () => {
+  const form = useRef();
+  const [submit, setSubmit] = useState("Send Message");
+  const[email,setEmail]=useState("sendEmail")
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(process.env.service_id, process.env.template_id, form.current, {
+        publicKey: process.env.publicKey,
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+          setEmail("");
+          setSubmit("Message Sent");
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+
+  };
+
+
+
   return (
     <section className="contact container section" id="contact">
       <h2 className="section__title">Get In Touch</h2>
@@ -11,26 +38,26 @@ const Contact = () => {
           <p className="contact__details">Don't like forms? Send me an E-mail. 👋</p>
         </div>
 
-        <form action="" className="contact__form">
+        <form ref={form} className="contact__form" onSubmit={sendEmail}>
           <div className="contact__form-group">
             <div className="contact__form-div">
-              <input type="text" className="contact__form-input"
+              <input type="text" name='from_name' className="contact__form-input"
               placeholder='Insert Your Name'/>
             </div>
             <div className="contact__form-div">
-              <input type="email" className="contact__form-input"
+              <input type="email" name='from_email' className="contact__form-input"
               placeholder='Insert Your E-Mail'/>
             </div>
           </div>
           <div className="contact__form-div">
-              <input type="text" className="contact__form-input"
+              <input type="text" className="contact__form-input" name="subject"
               placeholder='Insert Your Subject'/>
             </div>
             <div className="contact__form-div contact__form-area">
-             <textarea name="" id=""
+             <textarea name="message" id=""
              className='contact__form-input' placeholder='Write your Message'></textarea>
             </div>
-            <button className="btn">Send Message</button>
+            <button className="btn" type='submit' value="Send">{submit}</button>
         </form>
       </div>
     </section>
