@@ -4,6 +4,7 @@ import Me from "../../assets/Madd.png";
 import HeaderSocials from './HeaderSocials';
 import ScrollDown from './ScrollDown';
 import Shapes from './Shapes';
+import cv from '../../assets/Madhavan Resume.pdf'
 
 
 const Home = () => {
@@ -18,7 +19,9 @@ const Home = () => {
           I'm Full Stack MERN Developer
         </span>
         <HeaderSocials />
+        <a href={cv}  target='blank' className="btn">Download CV</a>
         <a href="#contact" className="btn">Hire Me</a>
+        
         <ScrollDown />
       </div>
       <Shapes />
