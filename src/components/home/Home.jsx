@@ -20,7 +20,7 @@ const Home = () => {
         </span>
         <HeaderSocials />
         <a href={cv}  target='blank' className="btn">Download CV</a>
-        <a href="#contact" className="btn">Hire Me</a>
+        <a href="#contact" className="btn">Let's Talk</a>
         
         <ScrollDown />
       </div>
