@@ -16,7 +16,8 @@ const About = () => {
                 <div className="about__data grid">
                     <div className="about__info">
                         <div className="about__description">
-                        I am a dedicated MERN Stack Developer with a B.E. in Computer Science and Engineering, bringing over four years of experience as a system engineer. My past work has equipped me with a diverse skill set, from managing and editing multimedia content like photographs and videos to designing posters and brochures. I have also maintained school IT infrastructure, including ERP systems, GPS tracking for vehicles, and CCTV networks. My passion for technology and creativity drives me to build efficient, scalable web applications.<br/>                            <a href="" className="btn">Download CV</a>
+                        I am a dedicated MERN Stack Developer with a B.E. in Computer Science and Engineering, bringing over four years of experience as a system engineer. My past work has equipped me with a diverse skill set, from managing and editing multimedia content like photographs and videos to designing posters and brochures. I have also maintained school IT infrastructure, including ERP systems, GPS tracking for vehicles, and CCTV networks. My passion for technology and creativity drives me to build efficient, scalable web applications.<br/>                            
+                        <a href="https://drive.google.com/file/d/1tXohqqoE9oeGJkNMPw0cSStVWr1gbqA9/view?usp=sharing" className="btn">Download CV</a>
                         </div>
 
                     </div>
