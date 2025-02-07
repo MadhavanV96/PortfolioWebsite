@@ -105,7 +105,7 @@
 }
 
 .work__button__link{
-    background-color: #ffd15c;
+    background-color: #fbfaf9;
     border-radius: 50%;
     line-height: 42px;
     padding: 10px;
@@ -125,3 +125,7 @@
     transform: translateY(0);
 }
 
+.work__button__link:hover{
+    background-color: #ffd15c;
+
+}
