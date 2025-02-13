@@ -51,7 +51,10 @@
     width: 100%;
     object-fit:fill;
 }
-
+.work__thumbnail{
+    height: 100%;
+    width: 100%;
+}
 
 
 
