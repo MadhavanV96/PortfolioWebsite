@@ -8,6 +8,7 @@ import Work7 from "../../assets/CardGameSolid.jpg";
 import Work8 from "../../assets/portfolio-book-creation-scaled.webp";
 import Work9 from "../../assets/TravelPage.png";
 import Work10 from "../../assets/EdTech.png";
+import Work11 from "../../assets/screenshot-for-readme.png"
 
 const Menu = [
   {
@@ -25,6 +26,15 @@ const Menu = [
     category: "MERN",
     projectLink:"https://passwordresetflowapp.netlify.app/",
     githubLink:"https://github.com/MadhavanV96/Password-Reset-Flow-Front-End"
+  },
+  {
+    id: 11,
+    image: Work11,
+    title: "Real Time Chat App Using MERN Stack",
+    category: "MERN",
+    projectLink:"https://fullstack-chat-app-ubrr.onrender.com",
+    githubLink:"https://github.com/MadhavanV96/fullstack-chat-app.git"
+    
   },
   {
     id: 3,
