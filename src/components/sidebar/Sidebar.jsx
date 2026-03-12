@@ -5,6 +5,7 @@ function Sidebar() {
   return (
     <aside className='aside'>
       <a href="#home" className="nav__logo">
+        logo
         <img src={Logo} alt="" className='nav__log__M' style={{height:"75px"}} />
       </a>
 
